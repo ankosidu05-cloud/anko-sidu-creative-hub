@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ANKO SIDU CREATIVE HUB</title>
+<meta name="description" content="ANKO SIDU CREATIVE HUB — Lyrics and Graphic Design.">
+<style>
+:root{--red:#e50914;--black:#070707;--white:#fff;--muted:#b9b9b9;--card:#121212;--line:#252525}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;background:var(--black);color:var(--white);line-height:1.6}
+a{text-decoration:none;color:inherit}
+.container{width:min(1120px,92%);margin:auto}
+header{position:sticky;top:0;z-index:20;background:rgba(7,7,7,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav{height:70px;display:flex;align-items:center;justify-content:space-between}
+.brand{font-weight:900;letter-spacing:1px}.brand span{color:var(--red)}
+nav{display:flex;gap:22px;font-size:14px;font-weight:700}
+nav a:hover{color:var(--red)}
+.menu{display:none;background:none;border:1px solid var(--line);color:#fff;padding:8px 11px;border-radius:8px}
+.hero{min-height:680px;display:grid;place-items:center;text-align:center;position:relative;overflow:hidden;background:radial-gradient(circle at 50% 35%,#3a0004 0,#120000 25%,#070707 62%)}
+.hero:before{content:"";position:absolute;width:500px;height:500px;border:1px solid rgba(229,9,20,.22);border-radius:50%;box-shadow:0 0 100px rgba(229,9,20,.12)}
+.hero-content{position:relative;z-index:1;padding:80px 0}
+.kicker{color:#ff5660;font-weight:800;letter-spacing:3px;text-transform:uppercase;font-size:13px}
+h1{font-size:clamp(42px,8vw,86px);line-height:.95;margin:18px 0;font-weight:950;letter-spacing:-3px}
+h1 span{color:var(--red)}
+.hero p{max-width:680px;margin:0 auto 30px;color:#d5d5d5;font-size:18px}
+.buttons{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:13px 22px;border-radius:9px;font-weight:800;border:1px solid var(--red);background:var(--red);color:#fff}
+.btn.secondary{background:transparent;border-color:#444}.btn:hover{transform:translateY(-1px)}
+section{padding:82px 0}.section-head{margin-bottom:35px}.section-head h2{font-size:38px;line-height:1.1}.section-head p{color:var(--muted);margin-top:8px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:linear-gradient(145deg,#151515,#0d0d0d);border:1px solid var(--line);border-radius:16px;padding:25px}
+.card:hover{border-color:#4a4a4a}.icon{font-size:34px;margin-bottom:15px}.card h3{margin-bottom:8px}.card p{color:var(--muted);font-size:14px}
+.price{font-size:30px;font-weight:900;margin:15px 0;color:#fff}.price small{font-size:13px;color:var(--muted)}
+.tag{display:inline-block;background:#250003;color:#ff7a81;border:1px solid #520008;border-radius:100px;padding:5px 10px;font-size:11px;font-weight:800}
+.dark{background:#0b0b0b}.portfolio{height:230px;border-radius:14px;background:linear-gradient(135deg,#240005,#0f0f0f 55%,#e50914);display:flex;align-items:end;padding:20px;overflow:hidden}
+.portfolio:nth-child(2){background:linear-gradient(135deg,#111,#2b0004,#111)}.portfolio:nth-child(3){background:linear-gradient(135deg,#e50914,#180003 55%,#111)}
+.portfolio strong{font-size:20px}.lyrics-search{display:flex;gap:10px;margin-bottom:20px}.lyrics-search input,.form input,.form select,.form textarea{width:100%;background:#0b0b0b;border:1px solid #333;color:#fff;border-radius:9px;padding:13px;font:inherit}
+.lyrics-list{display:grid;gap:10px}.song{display:flex;justify-content:space-between;align-items:center;background:#111;border:1px solid var(--line);padding:16px;border-radius:10px}.song span{color:var(--muted);font-size:13px}
+.order{display:grid;grid-template-columns:1fr 1fr;gap:30px}.form{display:grid;gap:12px}.form textarea{min-height:120px;resize:vertical}
+.notice{border-left:3px solid var(--red);padding:15px;background:#110000;color:#ddd;margin-top:18px;font-size:13px}
+footer{border-top:1px solid var(--line);padding:35px 0;color:#999}.footer-row{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+@media(max-width:760px){nav{display:none;position:absolute;top:70px;left:0;right:0;background:#090909;padding:20px;flex-direction:column;border-bottom:1px solid var(--line)}nav.open{display:flex}.menu{display:block}.grid,.order{grid-template-columns:1fr}.hero{min-height:610px}section{padding:60px 0}.lyrics-search{flex-direction:column}}
+</style>
+</head>
+<body>
+<header>
+<div class="container nav">
+<a class="brand" href="#home">ANKO <span>SIDU</span></a>
+<button class="menu" onclick="document.querySelector('nav').classList.toggle('open')">MENU</button>
+<nav>
+<a href="#home">Home</a><a href="#lyrics">Lyrics</a><a href="#design">Graphic Design</a><a href="#portfolio">Portfolio</a><a href="#pricing">Pricing</a><a href="#order">Order</a>
+</nav>
+</div>
+</header>
+
+<main>
+<section class="hero" id="home">
+<div class="container hero-content">
+<div class="kicker">Creative • Music • Design</div>
+<h1>ANKO SIDU<br><span>CREATIVE HUB</span></h1>
+<p>Discover lyrics. Get professional graphic designs. Place your order and turn your ideas into powerful visual content.</p>
+<div class="buttons"><a class="btn" href="#order">ORDER NOW</a><a class="btn secondary" href="#lyrics">EXPLORE LYRICS</a></div>
+</div>
+</section>
+
+<section id="design">
+<div class="container">
+<div class="section-head"><h2>What We Create</h2><p>Professional creative services built for artists, businesses and brands.</p></div>
+<div class="grid">
+<div class="card"><div class="icon">🎨</div><h3>Graphic Design</h3><p>Posters, logos, YouTube covers, social media artwork, adverts and custom designs.</p></div>
+<div class="card"><div class="icon">🎵</div><h3>Lyrics</h3><p>A dedicated space for discovering and reading your favourite songs and lyrics.</p></div>
+<div class="card"><div class="icon">⚡</div><h3>Fast Orders</h3><p>Send your requirements online and get your creative project started without visiting an office.</p></div>
+</div>
+</div>
+</section>
+
+<section class="dark" id="lyrics">
+<div class="container">
+<div class="section-head"><h2>Lyrics Library</h2><p>Search the collection and open a song.</p></div>
+<div class="lyrics-search"><input id="search" placeholder="Search artist or song..." oninput="filterSongs()"></div>
+<div class="lyrics-list" id="songs">
+<div class="song" data-name="sample artist sample song"><div><b>Sample Song</b><br><span>Sample Artist</span></div><span>Coming soon</span></div>
+<div class="song" data-name="anko sidu new song"><div><b>Your lyrics can appear here</b><br><span>ANKO SIDU</span></div><span>Coming soon</span></div>
+</div>
+<div class="notice">The lyrics section is ready for your real song catalogue. We can add individual artist/song pages next.</div>
+</div>
+</section>
+
+<section id="portfolio">
+<div class="container">
+<div class="section-head"><h2>Portfolio</h2><p>A showcase area for your best work.</p></div>
+<div class="grid">
+<div class="portfolio"><strong>POSTERS</strong></div>
+<div class="portfolio"><strong>LOGOS</strong></div>
+<div class="portfolio"><strong>MUSIC ARTWORK</strong></div>
+</div>
+</div>
+</section>
+
+<section class="dark" id="pricing">
+<div class="container">
+<div class="section-head"><h2>Simple Pricing</h2><p>Starter packages — we can change these to your exact prices.</p></div>
+<div class="grid">
+<div class="card"><span class="tag">STARTING FROM</span><h3>Logo Design</h3><div class="price">KES 300+ <small>/ logo</small></div><p>Professional custom logo design for your brand.</p></div>
+<div class="card"><span class="tag">STARTING FROM</span><h3>Poster Design</h3><div class="price">KES 350+ <small>/ poster</small></div><p>Professional poster design with your supplied details.</p></div>
+<div class="card"><span class="tag">LYRICS</span><h3>Song Lyrics</h3><div class="price">KES 30 <small>/ song</small></div><p>Get a song added to the lyrics collection.</p></div>
+</div>
+</div>
+</section>
+
+<section id="order">
+<div class="container">
+<div class="section-head"><h2>Place an Order</h2><p>Tell us what you need. We’ll use your details to prepare the job.</p></div>
+<div class="order">
+<div>
+<h3>How it works</h3>
+<p style="color:#aaa;margin-top:10px">1. Choose a service.<br>2. Describe your requirements.<br>3. Submit your order.<br>4. We confirm the job and payment details.<br>5. Pay via M-Pesa Pochi la Biashara: <b>0794382049</b>.</p>
+<div class="notice">Payment: M-Pesa Pochi la Biashara — 0794382049. Payment details are confirmed when your order is received.</div>
+</div>
+<form class="form" onsubmit="submitOrder(event)">
+<input id="name" required placeholder="Your name">
+<input id="phone" required placeholder="M-Pesa / WhatsApp number">
+<select id="service" required><option value="">Select service</option><option>Graphic Design — Poster</option><option>Graphic Design — Logo</option><option>Graphic Design — YouTube Cover</option><option>Graphic Design — Other</option><option>Lyrics / Music Content</option></select>
+<textarea id="details" required placeholder="Describe what you want..."></textarea>
+<button class="btn" type="submit">SUBMIT ORDER</button>
+</form>
+</div>
+</div>
+</section>
+</main>
+
+<footer><div class="container footer-row"><div><b>ANKO SIDU CREATIVE HUB</b><br><small>Lyrics & Graphic Design</small></div><div>© <span id="year"></span> ANKO SIDU</div></div></footer>
+
+<script>
+document.getElementById('year').textContent=new Date().getFullYear();
+function filterSongs(){
+ const q=document.getElementById('search').value.toLowerCase();
+ document.querySelectorAll('.song').forEach(s=>s.style.display=s.dataset.name.includes(q)?'flex':'none');
+}
+function submitOrder(e){
+ e.preventDefault();
+ const name=document.getElementById('name').value;
+ const phone=document.getElementById('phone').value;
+ const service=document.getElementById('service').value;
+ const details=document.getElementById('details').value;
+ const text=`Hello ANKO SIDU CREATIVE HUB.%0A%0AOrder: ${encodeURIComponent(service)}%0AName: ${encodeURIComponent(name)}%0APhone: ${encodeURIComponent(phone)}%0ADetails: ${encodeURIComponent(details)}`;
+ // Replace 254700000000 with the real business WhatsApp number before publishing.
+ window.open('https://wa.me/254700000000?text='+text,'_blank');
+}
+</script>
+</body>
+</html>
